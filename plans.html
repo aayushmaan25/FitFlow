@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitFlow - Workout Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FitFlow</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="plans.html">Workout Plans</a>
+            <a href="details.html">Exercise Details</a>
+            <a href="progress.html">Progress Tracker</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="plans">
+            <h2>Workout Plans</h2>
+            <p>
+    Choose a goal and difficulty to find a session that suits you.
+    Each plan shows its estimated time and includes instructions you can
+    open before you begin.
+</p>
+
+            <label for="goal-filter">Filter by goal:</label>
+            <select id="goal-filter">
+                <option value="all">All Goals</option>
+                <option value="Strength">Strength</option>
+                <option value="Cardio">Cardio</option>
+                <option value="Flexibility">Flexibility</option>
+            </select>
+
+            <label for="level-filter">Filter by difficulty:</label>
+            <select id="level-filter">
+                <option value="all">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+            </select>
+
+            <div class="workout-card" data-goal="Strength" data-level="Beginner">
+                <h3>Full-Body Workout</h3>
+                <p>Goal: Strength | Difficulty: Beginner | 20 minutes</p>
+                <p>This session combines simple strength movements for your upper and lower body.</p>
+                <a href="details.html#strength">View Exercises</a>
+            </div>
+
+            <div class="workout-card" data-goal="Cardio" data-level="Beginner">
+                <h3>Easy Cardio Workout</h3>
+                <p>Goal: Cardio | Difficulty: Beginner | 15 minutes</p>
+                <p>Move at a steady pace with marching and side steps in this short cardio session.</p>
+                <a href="details.html#cardio">View Exercises</a>
+            </div>
+
+            <div class="workout-card" data-goal="Flexibility" data-level="Intermediate">
+                <h3>Stretch and Relax</h3>
+                <p>Goal: Flexibility | Difficulty: Intermediate | 15 minutes</p>
+                <p>Follow gentle stretches for your arms, legs and back at a comfortable pace.</p>
+                <a href="details.html#flexibility">View Exercises</a>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

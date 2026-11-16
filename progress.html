@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FitFlow - Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FitFlow</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="plans.html">Workout Plans</a>
+            <a href="details.html">Exercise Details</a>
+            <a href="progress.html">Progress Tracker</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="progress">
+            <h2>Progress Tracker</h2>
+            <p>
+    Record each completed session here. Your total stays saved in this browser
+    even after you refresh the page.
+</p>
+
+            <p>
+                Completed workouts:
+                <span id="workout-count">0</span>
+            </p>
+
+            <button id="complete-button">Record a Completed Workout</button>
+
+            <h3>Contact Us</h3>
+            <p>Have a question or suggestion? Enter your name and message below.</p>
+
+            <form>
+                <label for="name">Your name:</label>
+                <input type="text" id="name">
+
+                <label for="message">Your message:</label>
+                <input type="text" id="message">
+
+                <button type="button" id="send-button">Send</button>
+                <p id="form-response"></p>
+            </form>
+        </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

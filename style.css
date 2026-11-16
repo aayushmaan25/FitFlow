@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f2;
+    color: #26352b;
+    margin: 0;
+}
+
+header {
+    background-color: #426b54;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+section {
+    background-color: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #426b54;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+.workout-card {
+    background-color: #f7faf6;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #dce7dc;
+    border-radius: 8px;
+}
+
+.workout-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #426b54;
+    font-weight: bold;
+}
+
+#workout-count {
+    color: #426b54;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#progress form {
+    margin-top: 15px;
+}
+
+#progress label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#progress input {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd5cc;
+    border-radius: 5px;
+}
+
+#form-response {
+    color: #426b54;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-right: 0;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .workout-card {
+        padding: 12px;
+    }
+}
+
+.hero {
+    background: linear-gradient(135deg, #e7efe4, #d2e3d5);
+    padding: 45px;
+}
+
+.eyebrow {
+    color: #587b5d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero > p:not(.eyebrow) {
+    max-width: 650px;
+    line-height: 1.7;
+    color: #58675d;
+}
+
+.explore-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 13px 20px;
+    border-radius: 7px;
+    background-color: #426b54;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.explore-link:hover {
+    background-color: #2f503d;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.home-card {
+    padding: 18px;
+    border: 1px solid #dce7dc;
+    border-radius: 8px;
+    background-color: #f7faf6;
+}
+
+.home-card p,
+.home-info > p,
+.home-note p {
+    line-height: 1.6;
+    color: #58675d;
+}
+
+.home-note {
+    background-color: #eaf1e7;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        padding: 25px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+#plans label {
+    display: inline-block;
+    margin: 10px 6px 14px 0;
+    font-weight: bold;
+}
+
+#plans select {
+    margin: 0 14px 14px 0;
+    padding: 8px 10px;
+    border: 1px solid #cbd5cc;
+    border-radius: 6px;
+    background-color: white;
+    color: #26352b;
+}
+
+.workout-card h3 {
+    margin-top: 0;
+    color: #34513f;
+}
+
+.workout-card p {
+    line-height: 1.6;
+    color: #58675d;
+}
+
+.workout-card a {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #e7efe4;
+    text-decoration: none;
+}
+
+.workout-card a:hover {
+    background-color: #dce9d8;
+}
